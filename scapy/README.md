@@ -23,11 +23,11 @@
 ### Ubuntu中 sudo  apt-get install 安装软件时 Could not get lock /var/lib/dpkg/lock解决方案 
   参考 https://blog.csdn.net/u011596455/article/details/60322568 
 ### Ubuntu 虚拟机与主机设置共享文件夹后 目录在 /mnt/hgfs/ 最后不知道为什么会失效 
-### Insmod 加载cfg80211.ko wifi驱动以后,开始设置为monitor模式  
-  启动monitor接口 
-  1、ifconfig wlan0 down  手动setting关闭WIFI  大坑否则后面的mode monitor设置失败 
-  2、iwconfig wlan0 mode monitor  
-  3. rfkill会报错使用 rfkill unblock wifi 参考 https://blog.csdn.net/weixin_39584758/article/details/80622675  
-  4、ifconfig wlan0 up 
-  5、ifconfig wlan0 0.0.0.0 
-  6、iwconfig wlan0 channel [1,13] // 选择一个信道监听
+### Insmod 加载cfg80211.ko wifi驱动以后,开始设置为monitor模式 启动monitor接口
+  1、ifconfig wlan0 down  手动setting关闭WIFI  大坑否则后面的mode monitor设置失败   
+  2、iwconfig wlan0 mode monitor    
+  3. rfkill会报错使用 rfkill unblock wifi 参考 https://blog.csdn.net/weixin_39584758/article/details/80622675    
+  4、ifconfig wlan0 up   
+  5、ifconfig wlan0 0.0.0.0   
+  6、iwconfig wlan0 channel [1,13] // 选择一个信道监听  
+  
